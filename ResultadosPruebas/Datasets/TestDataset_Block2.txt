@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Security advisory: CVE-2026-2005 affects the PostgreSQL pgcrypto contrib module in vulnerable PostgreSQL versions. The company runs PostgreSQL 15.13, but the available asset inventory does not indicate whether the pgcrypto extension is installed or used by any database. Administrators should verify extension usage before confirming impact.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-2005 may affect PostgreSQL if pgcrypto is enabled',
+  'https://www.postgresql.org/support/security/CVE-2026-2005/'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Security advisory: CVE-2026-2004 affects the PostgreSQL intarray contrib module. The organization runs PostgreSQL 15.13, which is within the vulnerable PostgreSQL branch, but the advisory only applies when the intarray extension is installed. Current stack data does not show whether intarray is deployed.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-2004 may affect PostgreSQL if intarray is installed',
+  'https://www.postgresql.org/support/security/CVE-2026-2004/'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Security advisory: CVE-2026-6475 affects PostgreSQL backup utilities such as pg_basebackup and pg_rewind in versions before 15.18. The company runs PostgreSQL 15.13, but the workflow does not indicate whether these utilities are used in production backup or recovery procedures. Impact should be reviewed by administrators.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-6475 may affect PostgreSQL backup workflows',
+  'https://www.postgresql.org/support/security/CVE-2026-6475/'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Security advisory: CVE-2026-6478 affects PostgreSQL deployments that still use MD5 password authentication. The company runs PostgreSQL 15.13, but the stack inventory does not specify whether MD5 authentication is enabled or whether all users have been migrated to SCRAM-SHA-256. The environment may be affected depending on authentication configuration.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-6478 may affect PostgreSQL if MD5 authentication is enabled',
+  'https://www.postgresql.org/support/security/CVE-2026-6478/'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Spring Framework advisory: CVE-2024-22233 affects specific Spring Framework versions and may cause denial of service under crafted HTTP requests. The company stack includes Spring AI 1.0.5 from VMware, which may depend on Spring Framework components, but the exact transitive Spring Framework version used by the application is not available in the stack inventory.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2024-22233 may affect Spring AI through Spring Framework dependency',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-22233'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Spring ecosystem advisory: CVE-2024-38820 affects certain Spring Framework applications using DataBinder with specific object graph exposure conditions. The company stack includes Spring AI 1.0.5, but the inventory does not include the Spring Framework runtime version or whether the vulnerable binding pattern is used.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2024-38820 may affect Spring-based applications depending on configuration',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-38820'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Spring ecosystem advisory: CVE-2024-38819 affects Spring Framework applications under specific static resource handling and path matching conditions. The company uses Spring AI 1.0.5, but there is no information about whether the application exposes Spring MVC static resources or uses an affected Spring Framework version.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2024-38819 may affect Spring AI deployments through Spring Framework',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-38819'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'n8n security advisory: CVE-2025-68613 affects n8n workflow expression evaluation in vulnerable versions. The company runs n8n 2.8.3, but the advisory and available data mention multiple fixed release trains and do not clearly state whether version 2.8.3 is affected. Human verification is required before confirming impact.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2025-68613 may affect n8n depending on release train',
+  'https://nvd.nist.gov/vuln/detail/CVE-2025-68613'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Ollama advisory: CVE-2025-63389 affects Ollama API endpoints in versions up to and including 0.12.3. The company stack includes Ollama, but no installed version is recorded. The service is marked as local, so impact depends on the actual installed version and whether the API is reachable from other systems.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2025-63389 may affect Ollama because installed version is unknown',
+  'https://nvd.nist.gov/vuln/detail/CVE-2025-63389'
+),
+(
+  NOW(),
+  'TestDataset_Block2',
+  'Ollama advisory: CVE-2025-15514 affects certain Ollama versions through a denial-of-service condition when processing malicious responses from an API server. The company stack includes Ollama with no version recorded and local exposure. The asset inventory is insufficient to confirm whether the installed version is vulnerable.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2025-15514 may affect Ollama because version is missing',
+  'https://nvd.nist.gov/vuln/detail/CVE-2025-15514'
+);

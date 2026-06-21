@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-22233 affects specific Spring Framework versions. The issue may allow specially crafted HTTP requests to cause a denial-of-service condition in affected Spring-based applications under vulnerable framework versions.',
+  'NO',
+  NULL,
+  NULL,
+  'Spring Framework denial-of-service advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-22233'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-38819 affects Spring Framework applications using functional web frameworks to serve static resources. Affected applications may be exposed to path traversal under specific application configurations.',
+  'NO',
+  NULL,
+  NULL,
+  'Spring Framework static resource handling advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-38819'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-38820 affects certain Spring Framework application scenarios involving data binding and object graph exposure. Applications using affected framework versions and vulnerable binding patterns require dependency review and patching.',
+  'NO',
+  NULL,
+  NULL,
+  'Spring Framework data binding security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-38820'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-1597 affects pgjdbc, the PostgreSQL JDBC Driver. Under specific query mode and placeholder conditions, vulnerable driver versions may allow SQL injection. Applications using affected pgjdbc versions should upgrade to a fixed release.',
+  'NO',
+  NULL,
+  NULL,
+  'PostgreSQL JDBC driver SQL injection advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-1597'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-21891 affects Node.js 20 and Node.js 21 when the experimental permission model is used. The issue may allow filesystem permission model bypass through path traversal in affected runtime versions.',
+  'NO',
+  NULL,
+  NULL,
+  'Node.js permission model bypass advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-21891'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-27980 affects Node.js child_process.spawn and child_process.spawnSync handling of batch files. Malicious command line arguments may lead to command injection in affected runtime environments.',
+  'NO',
+  NULL,
+  NULL,
+  'Node.js child_process command injection advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-27980'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-27983 affects the Node.js HTTP/2 server implementation. An attacker may cause denial of service by sending a small number of specially crafted HTTP/2 frame packets to vulnerable Node.js services.',
+  'NO',
+  NULL,
+  NULL,
+  'Node.js HTTP/2 denial-of-service advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-27983'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2023-23936 affects the Undici HTTP client used in Node.js environments. The issue relates to CRLF injection in host header handling and may impact applications using vulnerable fetch or HTTP client functionality.',
+  'NO',
+  NULL,
+  NULL,
+  'Undici HTTP client header injection advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-23936'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2021-44228 affects Apache Log4j through unsafe JNDI lookup behavior. Java applications using vulnerable Log4j versions may allow remote code execution when attacker-controlled data is logged.',
+  'NO',
+  NULL,
+  NULL,
+  'Apache Log4j remote code execution advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2021-44228'
+),
+(
+  NOW(),
+  'TestDataset_Block9',
+  'Security advisory: CVE-2024-21626 affects runc container runtime through a container escape issue. Containerized workloads running affected runc versions may be exposed to filesystem access outside the intended container boundary.',
+  'NO',
+  NULL,
+  NULL,
+  'runc container runtime escape advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-21626'
+);

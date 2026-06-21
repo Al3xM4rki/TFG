@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2024-38821 affects VMware Tanzu Spring Cloud Gateway under specific gateway routing configurations. The affected product is Spring Cloud Gateway for Kubernetes and related Tanzu gateway deployments. Successful exploitation may allow unauthorized access to gateway routes depending on configuration.',
+  'NO',
+  NULL,
+  NULL,
+  'VMware Tanzu Spring Cloud Gateway security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-38821'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2023-20883 affects VMware Aria Operations for Networks. The vulnerability may allow command injection in affected VMware Aria deployments. Administrators are advised to review affected versions and apply the corresponding vendor patches.',
+  'NO',
+  NULL,
+  NULL,
+  'VMware Aria Operations for Networks command injection advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-20883'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2024-22250 affects VMware Workspace ONE Access and VMware Identity Manager. The issue applies to VMware access management appliances and identity infrastructure. Affected deployments should be updated according to vendor guidance.',
+  'NO',
+  NULL,
+  NULL,
+  'VMware Workspace ONE Access security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-22250'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2023-34039 affects VMware Aria Operations for Networks through an authentication bypass issue. The affected product is VMware Aria Operations for Networks. Exploitation may allow unauthenticated access to affected appliances.',
+  'NO',
+  NULL,
+  NULL,
+  'VMware Aria Operations authentication bypass advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-34039'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2024-36401 affects GeoServer through unsafe evaluation of property names in OGC request parameters. Some GeoServer deployments may use PostgreSQL as a backend datastore for geospatial data. The vulnerability is associated with GeoServer and GeoTools processing behavior.',
+  'NO',
+  NULL,
+  NULL,
+  'GeoServer remote code execution advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-36401'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2023-22515 affects Atlassian Confluence Data Center and Server. Some Confluence installations may use external database systems such as PostgreSQL for application data storage. The vulnerability affects Confluence application components and requires review of exposed Confluence deployments.',
+  'NO',
+  NULL,
+  NULL,
+  'Atlassian Confluence security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-22515'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2024-27198 affects JetBrains TeamCity authentication. TeamCity is a CI/CD automation platform used to orchestrate build and deployment workflows. Affected TeamCity deployments may allow authentication bypass and unauthorized administrative actions.',
+  'NO',
+  NULL,
+  NULL,
+  'JetBrains TeamCity authentication bypass advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-27198'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2023-23897 affects Jenkins due to stored cross-site scripting in specific plugins. Jenkins is an automation server commonly used for CI/CD pipelines and workflow-style job execution. Administrators should review affected Jenkins plugin versions.',
+  'NO',
+  NULL,
+  NULL,
+  'Jenkins plugin stored XSS advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-23897'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2024-21626 affects runc container runtime through a container escape issue. Containerized applications and local services may rely on container runtimes depending on deployment architecture. Affected runc versions should be patched according to vendor guidance.',
+  'NO',
+  NULL,
+  NULL,
+  'runc container runtime security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-21626'
+),
+(
+  NOW(),
+  'TestDataset_Block8_Strict',
+  'Security advisory: CVE-2024-3094 affects XZ Utils through a supply chain backdoor in affected Linux distributions. XZ Utils is a compression library that may be present as a system package in Linux environments. Administrators should verify distribution package versions and affected builds.',
+  'NO',
+  NULL,
+  NULL,
+  'XZ Utils supply chain security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-3094'
+);

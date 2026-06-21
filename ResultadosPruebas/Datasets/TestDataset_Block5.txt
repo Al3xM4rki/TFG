@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A security notice recommends that organizations review Microsoft Exchange mailbox auditing and transport rules after reports of phishing campaigns abusing misconfigured mail flow settings. The notice applies to Microsoft Exchange and Microsoft 365 environments.',
+  'NO',
+  NULL,
+  NULL,
+  'Microsoft Exchange mailbox auditing review recommended',
+  'https://learn.microsoft.com/en-us/exchange/security-and-compliance/'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A cloud security bulletin warns that misconfigured Amazon S3 buckets may expose sensitive files to the public internet. Organizations are advised to review bucket policies, public access blocks and IAM permissions. ',
+  'NO',
+  NULL,
+  NULL,
+  'Amazon S3 bucket exposure warning for cloud storage environments',
+  'https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A Kubernetes hardening notice recommends reviewing exposed Kubernetes API servers, anonymous authentication and overly permissive RBAC roles. The notice is aimed at Kubernetes clusters and container orchestration platforms.',
+  'NO',
+  NULL,
+  NULL,
+  'Kubernetes API server hardening notice',
+  'https://kubernetes.io/docs/concepts/security/'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A security advisory for WordPress administrators warns about insecure plugin configurations that may expose administrative panels or allow unauthorized content changes. The notice recommends reviewing plugin permissions and updating themes.',
+  'NO',
+  NULL,
+  NULL,
+  'WordPress plugin configuration security notice',
+  'https://wordpress.org/documentation/article/hardening-wordpress/'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A browser security notice recommends updating Google Chrome and Microsoft Edge to address recently discovered memory safety issues in browser rendering components. The notice applies to endpoint browser software.',
+  'NO',
+  NULL,
+  NULL,
+  'Browser memory safety update recommended for Chrome and Edge',
+  'https://chromereleases.googleblog.com/'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A network security bulletin warns that exposed VPN gateways may be targeted by credential stuffing and brute-force attacks. The advisory focuses on VPN concentrators, remote access appliances and externally exposed authentication portals.',
+  'NO',
+  NULL,
+  NULL,
+  'VPN gateway credential stuffing warning',
+  'https://www.cisa.gov/resources-tools/resources/secure-remote-access'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A storage security notice recommends reviewing SMB file share permissions after several incidents involving exposed Windows file servers. The guidance applies to Windows file sharing, SMB servers and Active Directory-managed file permissions.',
+  'NO',
+  NULL,
+  NULL,
+  'SMB file share permissions should be reviewed',
+  'https://learn.microsoft.com/en-us/windows-server/storage/file-server/'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A DevOps security bulletin warns that Jenkins controllers with weak permissions may allow unauthorized job modification and credential exposure. The notice recommends reviewing Jenkins role-based access controls, plugin updates and build agent isolation.',
+  'NO',
+  NULL,
+  NULL,
+  'Jenkins controller permissions and plugin review recommended',
+  'https://www.jenkins.io/doc/book/security/'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A container registry security notice warns that Docker registries exposed without authentication may allow unauthorized image pulls or pushes. The notice applies to Docker Registry, Harbor and similar image registry platforms.',
+  'NO',
+  NULL,
+  NULL,
+  'Container registry authentication review recommended',
+  'https://docs.docker.com/registry/'
+),
+(
+  NOW(),
+  'TestDataset_Block5',
+  'A mobile device management bulletin recommends reviewing Android Enterprise policies after reports of devices running outdated security patch levels. The notice applies to MDM-managed Android devices and mobile endpoint fleets.',
+  'NO',
+  NULL,
+  NULL,
+  'Android Enterprise MDM security policy review recommended',
+  'https://source.android.com/docs/security'
+);

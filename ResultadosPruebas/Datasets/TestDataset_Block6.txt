@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A security notice mentions a possible issue in self-hosted automation platforms where workflow metadata may be exposed through internal diagnostic endpoints. The article references n8n deployments but the affected versions are not included in the available excerpt. Administrators are advised to review access controls and update if necessary. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Possible metadata exposure in self-hosted automation platforms',
+  'https://example.com/truncated/n8n-metadata-exposure'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A database security bulletin reports that some PostgreSQL deployments may require urgent configuration review after reports of weak authentication and overly broad internal access rules. The article mentions PostgreSQL 15 but the exact affected minor versions and configurations are not visible in the feed excerpt. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'PostgreSQL deployments may require authentication review',
+  'https://example.com/truncated/postgresql-auth-review'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A vendor advisory warns that AI application frameworks may expose debugging or actuator metadata if deployed with development settings enabled. The excerpt references Spring-based AI applications but does not clearly state whether Spring AI 1.0.5 is affected. Full advisory unavailable. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Spring-based AI applications may expose debugging metadata',
+  'https://example.com/truncated/spring-ai-debugging'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'Researchers report that local LLM serving tools may expose model management APIs when bound to non-loopback interfaces. The excerpt mentions Ollama-like deployments but does not include product versions, exploit details or vendor confirmation. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Local LLM serving tools may expose model management APIs',
+  'https://example.com/truncated/local-llm-api-exposure'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A security news feed reports a critical issue in an open-source automation server used for workflow orchestration. The affected product name is not fully visible in the RSS summary, but the article mentions credential exposure and failed execution logs. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Open-source automation server may expose credentials in logs',
+  'https://example.com/truncated/automation-credential-logs'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A short advisory warns that an internal database platform may expose sensitive metadata when administrative roles are misconfigured. The summary does not mention a specific product, version, vendor or CVE. It recommends reviewing access control and network exposure. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Internal database platform may expose sensitive metadata',
+  'https://example.com/truncated/database-metadata-exposure'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A partial security bulletin mentions that several self-hosted developer tools may require urgent review due to insecure default settings. The available text does not include product names, versions, CVEs or affected vendors. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Self-hosted developer tools require security review',
+  'https://example.com/truncated/self-hosted-tools-review'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A feed item reports that a popular database engine has received a security hardening update. The article preview does not show whether the database is PostgreSQL, MySQL, MariaDB or another product. No CVE or version range is included in the excerpt. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Popular database engine receives security hardening update',
+  'https://example.com/truncated/database-hardening-update'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'An advisory warns that workflow automation platforms may leak secrets through overly verbose execution logs. The excerpt does not mention n8n directly, but describes self-hosted workflow automation, credentials, and execution history. Full article requires access to the original source. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'Workflow automation platforms may leak secrets through execution logs',
+  'https://example.com/truncated/workflow-automation-secrets'
+),
+(
+  NOW(),
+  'TestDataset_Block6',
+  'A security notice says that applications using AI integration libraries should review dependency versions due to recently fixed issues in underlying web frameworks. The summary mentions neither Spring AI nor exact framework versions, but refers to Java-based AI applications. [...]',
+  'NO',
+  NULL,
+  NULL,
+  'AI integration libraries should review dependency versions',
+  'https://example.com/truncated/ai-library-dependency-review'
+);

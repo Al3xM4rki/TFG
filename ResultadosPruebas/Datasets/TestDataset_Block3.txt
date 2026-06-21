@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Microsoft Exchange Server security advisory: CVE-2021-26855 is a server-side request forgery vulnerability affecting Microsoft Exchange Server. The issue allows an unauthenticated attacker to send arbitrary HTTP requests and authenticate as the Exchange server.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2021-26855 affects Microsoft Exchange Server',
+  'https://nvd.nist.gov/vuln/detail/CVE-2021-26855'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Microsoft Windows security advisory: CVE-2020-1472, also known as Zerologon, affects the Netlogon Remote Protocol in Microsoft Windows Server domain controllers. Successful exploitation could allow elevation of privilege against Active Directory domain controllers.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2020-1472 affects Microsoft Windows Netlogon',
+  'https://nvd.nist.gov/vuln/detail/CVE-2020-1472'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Citrix security advisory: CVE-2019-19781 affects Citrix Application Delivery Controller and Citrix Gateway appliances. The vulnerability may allow unauthenticated remote code execution on affected Citrix products.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2019-19781 affects Citrix ADC and Gateway',
+  'https://nvd.nist.gov/vuln/detail/CVE-2019-19781'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Cisco security advisory: CVE-2023-20198 affects the Cisco IOS XE web UI feature when exposed to the internet or untrusted networks. Exploitation may allow privilege escalation and full device compromise.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2023-20198 affects Cisco IOS XE',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-20198'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Fortinet security advisory: CVE-2023-27997 affects Fortinet FortiOS and FortiProxy SSL-VPN appliances. The vulnerability may allow remote code execution on affected VPN devices.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2023-27997 affects Fortinet FortiOS SSL-VPN',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-27997'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Atlassian security advisory: CVE-2022-26134 affects Atlassian Confluence Server and Data Center. The vulnerability allows unauthenticated remote code execution on affected Confluence instances.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2022-26134 affects Atlassian Confluence',
+  'https://nvd.nist.gov/vuln/detail/CVE-2022-26134'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Apache HTTP Server security advisory: CVE-2021-41773 affects Apache HTTP Server 2.4.49 and may allow path traversal and file disclosure under specific configurations.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2021-41773 affects Apache HTTP Server',
+  'https://nvd.nist.gov/vuln/detail/CVE-2021-41773'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'MOVEit Transfer security advisory: CVE-2023-34362 affects Progress MOVEit Transfer and may allow SQL injection leading to unauthorized access.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2023-34362 affects MOVEit Transfer',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-34362'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'F5 security advisory: CVE-2021-22986 affects F5 BIG-IP and BIG-IQ iControl REST interfaces. Exploitation may allow unauthenticated remote code execution on affected F5 appliances.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2021-22986 affects F5 BIG-IP iControl REST',
+  'https://nvd.nist.gov/vuln/detail/CVE-2021-22986'
+),
+(
+  NOW(),
+  'TestDataset_Block3',
+  'Citrix security advisory: CVE-2023-3519 affects Citrix ADC and Citrix Gateway appliances. The vulnerability may allow unauthenticated remote code execution on vulnerable Citrix systems.,
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2023-3519 affects Citrix ADC and Gateway',
+  'https://nvd.nist.gov/vuln/detail/CVE-2023-3519'
+);

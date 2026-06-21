@@ -1,0 +1,1851 @@
+[
+  {
+    "id": 1195,
+    "relevant": true,
+    "relevante": true,
+    "status": "confirmed_affected",
+    "alert_level": "high",
+    "severidad": "high",
+    "confidence": 0.95,
+    "cve_ids": [
+      "CVE-2025-8715"
+    ],
+    "cve_detectado": "CVE-2025-8715",
+    "cve_detectado_pg": "{CVE-2025-8715}",
+    "affected_stack_items": [
+      {
+        "name": "PostgreSQL",
+        "vendor": "PostgreSQL",
+        "installed_versions": [
+          "15.13"
+        ],
+        "matched_version": "15.13",
+        "affected_versions": "before 15.14",
+        "match_type": "version",
+        "evidence": "CVE description and news advisory confirm PostgreSQL 15 versions before 15.14 are affected",
+        "impact": "high"
+      }
+    ],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8715",
+        "confidence": "high"
+      },
+      {
+        "type": "vendor_advisory",
+        "url": "https://www.postgresql.org/support/security/CVE-2025-8715/",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": false,
+    "requiere_revision": false,
+    "should_send_alert": true,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2025-8715"
+        ],
+        "status": "confirmed_affected",
+        "alert_level": "high",
+        "severity": "high",
+        "relevant": true,
+        "confidence": 0.95,
+        "should_send_alert": true,
+        "requires_human_review": false,
+        "reasoning_summary": "The company's PostgreSQL 15.13 version is within the affected range (before 15.14) as confirmed by both CVE details and the PostgreSQL security advisory. The vulnerability impacts critical tools like pg_restore, which are part of the PostgreSQL stack.",
+        "recommended_action": "Upgrade PostgreSQL to 15.14 or later immediately to mitigate the arbitrary code execution risk during restore operations.",
+        "affected_stack_items": [
+          {
+            "name": "PostgreSQL",
+            "vendor": "PostgreSQL",
+            "installed_versions": [
+              "15.13"
+            ],
+            "matched_version": "15.13",
+            "affected_versions": "before 15.14",
+            "match_type": "version",
+            "evidence": "CVE description and news advisory confirm PostgreSQL 15 versions before 15.14 are affected",
+            "impact": "high"
+          }
+        ],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8715",
+            "confidence": "high"
+          },
+          {
+            "type": "vendor_advisory",
+            "url": "https://www.postgresql.org/support/security/CVE-2025-8715/",
+            "confidence": "high"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1195,
+          "relevant": true,
+          "category": "cve",
+          "status": "confirmed_affected",
+          "alert_level": "high",
+          "confidence": 0.95,
+          "cve_ids": [
+            "CVE-2025-8715"
+          ],
+          "affected_stack_items": [
+            {
+              "name": "PostgreSQL",
+              "vendor": "PostgreSQL",
+              "installed_versions": [
+                "15.13"
+              ],
+              "matched_version": "15.13",
+              "affected_versions": "before 15.14",
+              "match_type": "version",
+              "evidence": "CVE description and news advisory confirm PostgreSQL 15 versions before 15.14 are affected",
+              "impact": "high"
+            }
+          ],
+          "reasoning_summary": "The company's PostgreSQL 15.13 version is within the affected range (before 15.14) as confirmed by both CVE details and the PostgreSQL security advisory. The vulnerability impacts critical tools like pg_restore, which are part of the PostgreSQL stack.",
+          "recommended_action": "Upgrade PostgreSQL to 15.14 or later immediately to mitigate the arbitrary code execution risk during restore operations.",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8715",
+              "confidence": "high"
+            },
+            {
+              "type": "vendor_advisory",
+              "url": "https://www.postgresql.org/support/security/CVE-2025-8715/",
+              "confidence": "high"
+            }
+          ],
+          "requires_human_review": false,
+          "should_send_alert": true
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1195,
+      "relevant": true,
+      "status": "confirmed_affected",
+      "alert_level": "high",
+      "confidence": 0.95,
+      "cve_ids": [
+        "CVE-2025-8715"
+      ],
+      "affected_stack_items": [
+        {
+          "name": "PostgreSQL",
+          "vendor": "PostgreSQL",
+          "installed_versions": [
+            "15.13"
+          ],
+          "matched_version": "15.13",
+          "affected_versions": "before 15.14",
+          "match_type": "version",
+          "evidence": "CVE description and news advisory confirm PostgreSQL 15 versions before 15.14 are affected",
+          "impact": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8715",
+          "confidence": "high"
+        },
+        {
+          "type": "vendor_advisory",
+          "url": "https://www.postgresql.org/support/security/CVE-2025-8715/",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": false,
+      "should_send_alert": true,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2025-8715"
+          ],
+          "status": "confirmed_affected",
+          "alert_level": "high",
+          "severity": "high",
+          "relevant": true,
+          "confidence": 0.95,
+          "should_send_alert": true,
+          "requires_human_review": false,
+          "reasoning_summary": "The company's PostgreSQL 15.13 version is within the affected range (before 15.14) as confirmed by both CVE details and the PostgreSQL security advisory. The vulnerability impacts critical tools like pg_restore, which are part of the PostgreSQL stack.",
+          "recommended_action": "Upgrade PostgreSQL to 15.14 or later immediately to mitigate the arbitrary code execution risk during restore operations.",
+          "affected_stack_items": [
+            {
+              "name": "PostgreSQL",
+              "vendor": "PostgreSQL",
+              "installed_versions": [
+                "15.13"
+              ],
+              "matched_version": "15.13",
+              "affected_versions": "before 15.14",
+              "match_type": "version",
+              "evidence": "CVE description and news advisory confirm PostgreSQL 15 versions before 15.14 are affected",
+              "impact": "high"
+            }
+          ],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8715",
+              "confidence": "high"
+            },
+            {
+              "type": "vendor_advisory",
+              "url": "https://www.postgresql.org/support/security/CVE-2025-8715/",
+              "confidence": "high"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1195,
+            "relevant": true,
+            "category": "cve",
+            "status": "confirmed_affected",
+            "alert_level": "high",
+            "confidence": 0.95,
+            "cve_ids": [
+              "CVE-2025-8715"
+            ],
+            "affected_stack_items": [
+              {
+                "name": "PostgreSQL",
+                "vendor": "PostgreSQL",
+                "installed_versions": [
+                  "15.13"
+                ],
+                "matched_version": "15.13",
+                "affected_versions": "before 15.14",
+                "match_type": "version",
+                "evidence": "CVE description and news advisory confirm PostgreSQL 15 versions before 15.14 are affected",
+                "impact": "high"
+              }
+            ],
+            "reasoning_summary": "The company's PostgreSQL 15.13 version is within the affected range (before 15.14) as confirmed by both CVE details and the PostgreSQL security advisory. The vulnerability impacts critical tools like pg_restore, which are part of the PostgreSQL stack.",
+            "recommended_action": "Upgrade PostgreSQL to 15.14 or later immediately to mitigate the arbitrary code execution risk during restore operations.",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8715",
+                "confidence": "high"
+              },
+              {
+                "type": "vendor_advisory",
+                "url": "https://www.postgresql.org/support/security/CVE-2025-8715/",
+                "confidence": "high"
+              }
+            ],
+            "requires_human_review": false,
+            "should_send_alert": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1197,
+    "relevant": false,
+    "relevante": false,
+    "status": "not_affected",
+    "alert_level": "none",
+    "severidad": "none",
+    "confidence": 0.95,
+    "cve_ids": [
+      "CVE-2021-26855"
+    ],
+    "cve_detectado": "CVE-2021-26855",
+    "cve_detectado_pg": "{CVE-2021-26855}",
+    "affected_stack_items": [],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26855",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": false,
+    "requiere_revision": false,
+    "should_send_alert": false,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2021-26855"
+        ],
+        "status": "not_affected",
+        "alert_level": "none",
+        "severity": "none",
+        "relevant": false,
+        "confidence": 0.95,
+        "should_send_alert": false,
+        "requires_human_review": false,
+        "reasoning_summary": "The CVE-2021-26855 vulnerability affects Microsoft Exchange Server versions 2013, 2016, and 2019. None of the components in the provided company technology stack (Spring AI, n8n, PostgreSQL, Ollama) are Microsoft Exchange Server or related to the affected CPEs listed in the CVE.",
+        "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+        "affected_stack_items": [],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26855",
+            "confidence": "high"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1197,
+          "relevant": false,
+          "category": "cve",
+          "status": "not_affected",
+          "alert_level": "none",
+          "confidence": 0.95,
+          "cve_ids": [
+            "CVE-2021-26855"
+          ],
+          "affected_stack_items": [],
+          "reasoning_summary": "The CVE-2021-26855 vulnerability affects Microsoft Exchange Server versions 2013, 2016, and 2019. None of the components in the provided company technology stack (Spring AI, n8n, PostgreSQL, Ollama) are Microsoft Exchange Server or related to the affected CPEs listed in the CVE.",
+          "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26855",
+              "confidence": "high"
+            }
+          ],
+          "requires_human_review": false,
+          "should_send_alert": false
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1197,
+      "relevant": false,
+      "status": "not_affected",
+      "alert_level": "none",
+      "confidence": 0.95,
+      "cve_ids": [
+        "CVE-2021-26855"
+      ],
+      "affected_stack_items": [],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26855",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": false,
+      "should_send_alert": false,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2021-26855"
+          ],
+          "status": "not_affected",
+          "alert_level": "none",
+          "severity": "none",
+          "relevant": false,
+          "confidence": 0.95,
+          "should_send_alert": false,
+          "requires_human_review": false,
+          "reasoning_summary": "The CVE-2021-26855 vulnerability affects Microsoft Exchange Server versions 2013, 2016, and 2019. None of the components in the provided company technology stack (Spring AI, n8n, PostgreSQL, Ollama) are Microsoft Exchange Server or related to the affected CPEs listed in the CVE.",
+          "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+          "affected_stack_items": [],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26855",
+              "confidence": "high"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1197,
+            "relevant": false,
+            "category": "cve",
+            "status": "not_affected",
+            "alert_level": "none",
+            "confidence": 0.95,
+            "cve_ids": [
+              "CVE-2021-26855"
+            ],
+            "affected_stack_items": [],
+            "reasoning_summary": "The CVE-2021-26855 vulnerability affects Microsoft Exchange Server versions 2013, 2016, and 2019. None of the components in the provided company technology stack (Spring AI, n8n, PostgreSQL, Ollama) are Microsoft Exchange Server or related to the affected CPEs listed in the CVE.",
+            "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26855",
+                "confidence": "high"
+              }
+            ],
+            "requires_human_review": false,
+            "should_send_alert": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1198,
+    "relevant": false,
+    "relevante": false,
+    "status": "not_affected",
+    "alert_level": "none",
+    "severidad": "none",
+    "confidence": 0.9,
+    "cve_ids": [
+      "CVE-2024-38819"
+    ],
+    "cve_detectado": "CVE-2024-38819",
+    "cve_detectado_pg": "{CVE-2024-38819}",
+    "affected_stack_items": [],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": false,
+    "requiere_revision": false,
+    "should_send_alert": false,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2024-38819"
+        ],
+        "status": "not_affected",
+        "alert_level": "none",
+        "severity": "none",
+        "relevant": false,
+        "confidence": 0.9,
+        "should_send_alert": false,
+        "requires_human_review": false,
+        "reasoning_summary": "The CVE affects the Spring Framework's functional web frameworks (WebMvc.fn/WebFlux.fn), but the company stack includes 'Spring AI' (a different product) and no direct references to vulnerable Spring Framework versions. No matching components found.",
+        "recommended_action": "No action required for this CVE based on current stack configuration.",
+        "affected_stack_items": [],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+            "confidence": "high"
+          },
+          {
+            "type": "news",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+            "confidence": "medium"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1198,
+          "relevant": false,
+          "category": "cve",
+          "status": "not_affected",
+          "alert_level": "none",
+          "confidence": 0.9,
+          "cve_ids": [
+            "CVE-2024-38819"
+          ],
+          "affected_stack_items": [],
+          "reasoning_summary": "The CVE affects the Spring Framework's functional web frameworks (WebMvc.fn/WebFlux.fn), but the company stack includes 'Spring AI' (a different product) and no direct references to vulnerable Spring Framework versions. No matching components found.",
+          "recommended_action": "No action required for this CVE based on current stack configuration.",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+              "confidence": "medium"
+            }
+          ],
+          "requires_human_review": false,
+          "should_send_alert": false
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1198,
+      "relevant": false,
+      "status": "not_affected",
+      "alert_level": "none",
+      "confidence": 0.9,
+      "cve_ids": [
+        "CVE-2024-38819"
+      ],
+      "affected_stack_items": [],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": false,
+      "should_send_alert": false,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2024-38819"
+          ],
+          "status": "not_affected",
+          "alert_level": "none",
+          "severity": "none",
+          "relevant": false,
+          "confidence": 0.9,
+          "should_send_alert": false,
+          "requires_human_review": false,
+          "reasoning_summary": "The CVE affects the Spring Framework's functional web frameworks (WebMvc.fn/WebFlux.fn), but the company stack includes 'Spring AI' (a different product) and no direct references to vulnerable Spring Framework versions. No matching components found.",
+          "recommended_action": "No action required for this CVE based on current stack configuration.",
+          "affected_stack_items": [],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+              "confidence": "medium"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1198,
+            "relevant": false,
+            "category": "cve",
+            "status": "not_affected",
+            "alert_level": "none",
+            "confidence": 0.9,
+            "cve_ids": [
+              "CVE-2024-38819"
+            ],
+            "affected_stack_items": [],
+            "reasoning_summary": "The CVE affects the Spring Framework's functional web frameworks (WebMvc.fn/WebFlux.fn), but the company stack includes 'Spring AI' (a different product) and no direct references to vulnerable Spring Framework versions. No matching components found.",
+            "recommended_action": "No action required for this CVE based on current stack configuration.",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+                "confidence": "high"
+              },
+              {
+                "type": "news",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38819",
+                "confidence": "medium"
+              }
+            ],
+            "requires_human_review": false,
+            "should_send_alert": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1199,
+    "relevant": true,
+    "relevante": true,
+    "status": "possibly_affected",
+    "alert_level": "medium",
+    "severidad": "medium",
+    "confidence": 0.75,
+    "cve_ids": [
+      "CVE-2024-22250"
+    ],
+    "cve_detectado": "CVE-2024-22250",
+    "cve_detectado_pg": "{CVE-2024-22250}",
+    "affected_stack_items": [
+      {
+        "name": "Spring AI",
+        "vendor": "VMware",
+        "installed_versions": [
+          "1.0.5"
+        ],
+        "matched_version": null,
+        "affected_versions": "",
+        "match_type": "vendor",
+        "evidence": "CVE mentions VMware products, company stack includes Spring AI (VMware) but no version range specified in CVE",
+        "impact": "none"
+      }
+    ],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-22250",
+        "confidence": "high"
+      },
+      {
+        "type": "vendor_advisory",
+        "url": "https://www.vmware.com/security/advisories/VMSA-2024-0003.html",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": true,
+    "requiere_revision": true,
+    "should_send_alert": true,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2024-22250"
+        ],
+        "status": "possibly_affected",
+        "alert_level": "medium",
+        "severity": "medium",
+        "relevant": true,
+        "confidence": 0.75,
+        "should_send_alert": true,
+        "requires_human_review": true,
+        "reasoning_summary": "The CVE affects VMware products, and the company stack includes a VMware component (Spring AI). However, the CVE does not specify affected versions, so it's unclear if the installed version (1.0.5) is vulnerable.",
+        "recommended_action": "Check VMware advisory VMSA-2024-0003 for affected versions and apply updates if necessary",
+        "affected_stack_items": [
+          {
+            "name": "Spring AI",
+            "vendor": "VMware",
+            "installed_versions": [
+              "1.0.5"
+            ],
+            "matched_version": null,
+            "affected_versions": "",
+            "match_type": "vendor",
+            "evidence": "CVE mentions VMware products, company stack includes Spring AI (VMware) but no version range specified in CVE",
+            "impact": "none"
+          }
+        ],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-22250",
+            "confidence": "high"
+          },
+          {
+            "type": "vendor_advisory",
+            "url": "https://www.vmware.com/security/advisories/VMSA-2024-0003.html",
+            "confidence": "high"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1199,
+          "relevant": true,
+          "category": "cve",
+          "status": "possibly_affected",
+          "alert_level": "medium",
+          "confidence": 0.75,
+          "cve_ids": [
+            "CVE-2024-22250"
+          ],
+          "affected_stack_items": [
+            {
+              "name": "Spring AI",
+              "vendor": "VMware",
+              "installed_versions": [
+                "1.0.5"
+              ],
+              "matched_version": null,
+              "affected_versions": "",
+              "match_type": "vendor",
+              "evidence": "CVE mentions VMware products, company stack includes Spring AI (VMware) but no version range specified in CVE",
+              "impact": "none"
+            }
+          ],
+          "reasoning_summary": "The CVE affects VMware products, and the company stack includes a VMware component (Spring AI). However, the CVE does not specify affected versions, so it's unclear if the installed version (1.0.5) is vulnerable.",
+          "recommended_action": "Check VMware advisory VMSA-2024-0003 for affected versions and apply updates if necessary",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-22250",
+              "confidence": "high"
+            },
+            {
+              "type": "vendor_advisory",
+              "url": "https://www.vmware.com/security/advisories/VMSA-2024-0003.html",
+              "confidence": "high"
+            }
+          ],
+          "requires_human_review": true,
+          "should_send_alert": true
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1199,
+      "relevant": true,
+      "status": "possibly_affected",
+      "alert_level": "medium",
+      "confidence": 0.75,
+      "cve_ids": [
+        "CVE-2024-22250"
+      ],
+      "affected_stack_items": [
+        {
+          "name": "Spring AI",
+          "vendor": "VMware",
+          "installed_versions": [
+            "1.0.5"
+          ],
+          "matched_version": null,
+          "affected_versions": "",
+          "match_type": "vendor",
+          "evidence": "CVE mentions VMware products, company stack includes Spring AI (VMware) but no version range specified in CVE",
+          "impact": "none"
+        }
+      ],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-22250",
+          "confidence": "high"
+        },
+        {
+          "type": "vendor_advisory",
+          "url": "https://www.vmware.com/security/advisories/VMSA-2024-0003.html",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": true,
+      "should_send_alert": true,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2024-22250"
+          ],
+          "status": "possibly_affected",
+          "alert_level": "medium",
+          "severity": "medium",
+          "relevant": true,
+          "confidence": 0.75,
+          "should_send_alert": true,
+          "requires_human_review": true,
+          "reasoning_summary": "The CVE affects VMware products, and the company stack includes a VMware component (Spring AI). However, the CVE does not specify affected versions, so it's unclear if the installed version (1.0.5) is vulnerable.",
+          "recommended_action": "Check VMware advisory VMSA-2024-0003 for affected versions and apply updates if necessary",
+          "affected_stack_items": [
+            {
+              "name": "Spring AI",
+              "vendor": "VMware",
+              "installed_versions": [
+                "1.0.5"
+              ],
+              "matched_version": null,
+              "affected_versions": "",
+              "match_type": "vendor",
+              "evidence": "CVE mentions VMware products, company stack includes Spring AI (VMware) but no version range specified in CVE",
+              "impact": "none"
+            }
+          ],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-22250",
+              "confidence": "high"
+            },
+            {
+              "type": "vendor_advisory",
+              "url": "https://www.vmware.com/security/advisories/VMSA-2024-0003.html",
+              "confidence": "high"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1199,
+            "relevant": true,
+            "category": "cve",
+            "status": "possibly_affected",
+            "alert_level": "medium",
+            "confidence": 0.75,
+            "cve_ids": [
+              "CVE-2024-22250"
+            ],
+            "affected_stack_items": [
+              {
+                "name": "Spring AI",
+                "vendor": "VMware",
+                "installed_versions": [
+                  "1.0.5"
+                ],
+                "matched_version": null,
+                "affected_versions": "",
+                "match_type": "vendor",
+                "evidence": "CVE mentions VMware products, company stack includes Spring AI (VMware) but no version range specified in CVE",
+                "impact": "none"
+              }
+            ],
+            "reasoning_summary": "The CVE affects VMware products, and the company stack includes a VMware component (Spring AI). However, the CVE does not specify affected versions, so it's unclear if the installed version (1.0.5) is vulnerable.",
+            "recommended_action": "Check VMware advisory VMSA-2024-0003 for affected versions and apply updates if necessary",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-22250",
+                "confidence": "high"
+              },
+              {
+                "type": "vendor_advisory",
+                "url": "https://www.vmware.com/security/advisories/VMSA-2024-0003.html",
+                "confidence": "high"
+              }
+            ],
+            "requires_human_review": true,
+            "should_send_alert": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1200,
+    "relevant": true,
+    "relevante": true,
+    "status": "possibly_affected",
+    "alert_level": "medium",
+    "severidad": "medium",
+    "confidence": 0.75,
+    "cve_ids": [
+      "CVE-2025-63389"
+    ],
+    "cve_detectado": "CVE-2025-63389",
+    "cve_detectado_pg": "{CVE-2025-63389}",
+    "affected_stack_items": [
+      {
+        "name": "Ollama",
+        "vendor": "Ollama",
+        "installed_versions": [],
+        "matched_version": null,
+        "affected_versions": "<=0.12.3",
+        "match_type": "product",
+        "evidence": "CVE description matches product name in company stack",
+        "impact": "medium"
+      }
+    ],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": true,
+    "requiere_revision": true,
+    "should_send_alert": true,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2025-63389"
+        ],
+        "status": "possibly_affected",
+        "alert_level": "medium",
+        "severity": "medium",
+        "relevant": true,
+        "confidence": 0.75,
+        "should_send_alert": true,
+        "requires_human_review": true,
+        "reasoning_summary": "The CVE affects Ollama API endpoints up to version 0.12.3, and the company_stack includes Ollama as a component with no installed versions specified. The match is based on product name only, requiring further verification of installed versions.",
+        "recommended_action": "Verify installed Ollama version against affected range (<=0.12.3) and apply updates if necessary",
+        "affected_stack_items": [
+          {
+            "name": "Ollama",
+            "vendor": "Ollama",
+            "installed_versions": [],
+            "matched_version": null,
+            "affected_versions": "<=0.12.3",
+            "match_type": "product",
+            "evidence": "CVE description matches product name in company stack",
+            "impact": "medium"
+          }
+        ],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+            "confidence": "high"
+          },
+          {
+            "type": "news",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+            "confidence": "medium"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1200,
+          "relevant": true,
+          "category": "cve",
+          "status": "possibly_affected",
+          "alert_level": "medium",
+          "confidence": 0.75,
+          "cve_ids": [
+            "CVE-2025-63389"
+          ],
+          "affected_stack_items": [
+            {
+              "name": "Ollama",
+              "vendor": "Ollama",
+              "installed_versions": [],
+              "matched_version": null,
+              "affected_versions": "<=0.12.3",
+              "match_type": "product",
+              "evidence": "CVE description matches product name in company stack",
+              "impact": "medium"
+            }
+          ],
+          "reasoning_summary": "The CVE affects Ollama API endpoints up to version 0.12.3, and the company_stack includes Ollama as a component with no installed versions specified. The match is based on product name only, requiring further verification of installed versions.",
+          "recommended_action": "Verify installed Ollama version against affected range (<=0.12.3) and apply updates if necessary",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+              "confidence": "medium"
+            }
+          ],
+          "requires_human_review": true,
+          "should_send_alert": true
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1200,
+      "relevant": true,
+      "status": "possibly_affected",
+      "alert_level": "medium",
+      "confidence": 0.75,
+      "cve_ids": [
+        "CVE-2025-63389"
+      ],
+      "affected_stack_items": [
+        {
+          "name": "Ollama",
+          "vendor": "Ollama",
+          "installed_versions": [],
+          "matched_version": null,
+          "affected_versions": "<=0.12.3",
+          "match_type": "product",
+          "evidence": "CVE description matches product name in company stack",
+          "impact": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": true,
+      "should_send_alert": true,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2025-63389"
+          ],
+          "status": "possibly_affected",
+          "alert_level": "medium",
+          "severity": "medium",
+          "relevant": true,
+          "confidence": 0.75,
+          "should_send_alert": true,
+          "requires_human_review": true,
+          "reasoning_summary": "The CVE affects Ollama API endpoints up to version 0.12.3, and the company_stack includes Ollama as a component with no installed versions specified. The match is based on product name only, requiring further verification of installed versions.",
+          "recommended_action": "Verify installed Ollama version against affected range (<=0.12.3) and apply updates if necessary",
+          "affected_stack_items": [
+            {
+              "name": "Ollama",
+              "vendor": "Ollama",
+              "installed_versions": [],
+              "matched_version": null,
+              "affected_versions": "<=0.12.3",
+              "match_type": "product",
+              "evidence": "CVE description matches product name in company stack",
+              "impact": "medium"
+            }
+          ],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+              "confidence": "medium"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1200,
+            "relevant": true,
+            "category": "cve",
+            "status": "possibly_affected",
+            "alert_level": "medium",
+            "confidence": 0.75,
+            "cve_ids": [
+              "CVE-2025-63389"
+            ],
+            "affected_stack_items": [
+              {
+                "name": "Ollama",
+                "vendor": "Ollama",
+                "installed_versions": [],
+                "matched_version": null,
+                "affected_versions": "<=0.12.3",
+                "match_type": "product",
+                "evidence": "CVE description matches product name in company stack",
+                "impact": "medium"
+              }
+            ],
+            "reasoning_summary": "The CVE affects Ollama API endpoints up to version 0.12.3, and the company_stack includes Ollama as a component with no installed versions specified. The match is based on product name only, requiring further verification of installed versions.",
+            "recommended_action": "Verify installed Ollama version against affected range (<=0.12.3) and apply updates if necessary",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+                "confidence": "high"
+              },
+              {
+                "type": "news",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-63389",
+                "confidence": "medium"
+              }
+            ],
+            "requires_human_review": true,
+            "should_send_alert": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1201,
+    "relevant": true,
+    "relevante": true,
+    "status": "confirmed_affected",
+    "alert_level": "high",
+    "severidad": "high",
+    "confidence": 0.93,
+    "cve_ids": [
+      "CVE-2023-27997",
+      "CVE-2025-8714"
+    ],
+    "cve_detectado": "CVE-2023-27997",
+    "cve_detectado_pg": "{CVE-2023-27997,CVE-2025-8714}",
+    "affected_stack_items": [
+      {
+        "name": "PostgreSQL",
+        "vendor": "PostgreSQL",
+        "installed_versions": [
+          "15.13"
+        ],
+        "matched_version": "15.13",
+        "affected_versions": "before 15.14",
+        "match_type": "version",
+        "evidence": "Installed version (15.13) falls within affected range (before 15.14)",
+        "impact": "high"
+      }
+    ],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27997",
+        "confidence": "high"
+      },
+      {
+        "type": "news",
+        "url": "https://example.com/security-roundup/postgresql-fortinet",
+        "confidence": "medium"
+      },
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8714",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": false,
+    "requiere_revision": false,
+    "should_send_alert": true,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2023-27997"
+        ],
+        "status": "not_affected",
+        "alert_level": "none",
+        "severity": "none",
+        "relevant": false,
+        "confidence": 0.95,
+        "should_send_alert": false,
+        "requires_human_review": false,
+        "reasoning_summary": "The CVE-2023-27997 vulnerability specifically affects Fortinet FortiOS and FortiProxy SSL-VPN appliances, which are not present in the company's technology stack. The company's stack includes PostgreSQL (version 15.13), Spring AI, n8n, and Ollama, none of which match the affected products in the CVE description.",
+        "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+        "affected_stack_items": [],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27997",
+            "confidence": "high"
+          },
+          {
+            "type": "news",
+            "url": "https://example.com/security-roundup/postgresql-fortinet",
+            "confidence": "medium"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1201,
+          "relevant": false,
+          "category": "cve",
+          "status": "not_affected",
+          "alert_level": "none",
+          "confidence": 0.95,
+          "cve_ids": [
+            "CVE-2023-27997"
+          ],
+          "affected_stack_items": [],
+          "reasoning_summary": "The CVE-2023-27997 vulnerability specifically affects Fortinet FortiOS and FortiProxy SSL-VPN appliances, which are not present in the company's technology stack. The company's stack includes PostgreSQL (version 15.13), Spring AI, n8n, and Ollama, none of which match the affected products in the CVE description.",
+          "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27997",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://example.com/security-roundup/postgresql-fortinet",
+              "confidence": "medium"
+            }
+          ],
+          "requires_human_review": false,
+          "should_send_alert": false
+        }
+      },
+      {
+        "cve_ids": [
+          "CVE-2025-8714"
+        ],
+        "status": "confirmed_affected",
+        "alert_level": "high",
+        "severity": "high",
+        "relevant": true,
+        "confidence": 0.9,
+        "should_send_alert": true,
+        "requires_human_review": false,
+        "reasoning_summary": "The CVE-2025-8714 affects PostgreSQL versions before 15.14, and the company's stack includes PostgreSQL 15.13 which is in the vulnerable range.",
+        "recommended_action": "Apply vendor patches for PostgreSQL as described in the CVE advisory",
+        "affected_stack_items": [
+          {
+            "name": "PostgreSQL",
+            "vendor": "PostgreSQL",
+            "installed_versions": [
+              "15.13"
+            ],
+            "matched_version": "15.13",
+            "affected_versions": "before 15.14",
+            "match_type": "version",
+            "evidence": "Installed version (15.13) falls within affected range (before 15.14)",
+            "impact": "high"
+          }
+        ],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8714",
+            "confidence": "high"
+          },
+          {
+            "type": "news",
+            "url": "https://example.com/security-roundup/postgresql-fortinet",
+            "confidence": "medium"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1201,
+          "relevant": true,
+          "category": "cve",
+          "status": "confirmed_affected",
+          "alert_level": "high",
+          "confidence": 0.9,
+          "cve_ids": [
+            "CVE-2025-8714"
+          ],
+          "affected_stack_items": [
+            {
+              "name": "PostgreSQL",
+              "vendor": "PostgreSQL",
+              "installed_versions": [
+                "15.13"
+              ],
+              "matched_version": "15.13",
+              "affected_versions": "before 15.14",
+              "match_type": "version",
+              "evidence": "Installed version (15.13) falls within affected range (before 15.14)",
+              "impact": "high"
+            }
+          ],
+          "reasoning_summary": "The CVE-2025-8714 affects PostgreSQL versions before 15.14, and the company's stack includes PostgreSQL 15.13 which is in the vulnerable range.",
+          "recommended_action": "Apply vendor patches for PostgreSQL as described in the CVE advisory",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8714",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://example.com/security-roundup/postgresql-fortinet",
+              "confidence": "medium"
+            }
+          ],
+          "requires_human_review": false,
+          "should_send_alert": true
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1201,
+      "relevant": true,
+      "status": "confirmed_affected",
+      "alert_level": "high",
+      "confidence": 0.93,
+      "cve_ids": [
+        "CVE-2023-27997",
+        "CVE-2025-8714"
+      ],
+      "affected_stack_items": [
+        {
+          "name": "PostgreSQL",
+          "vendor": "PostgreSQL",
+          "installed_versions": [
+            "15.13"
+          ],
+          "matched_version": "15.13",
+          "affected_versions": "before 15.14",
+          "match_type": "version",
+          "evidence": "Installed version (15.13) falls within affected range (before 15.14)",
+          "impact": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27997",
+          "confidence": "high"
+        },
+        {
+          "type": "news",
+          "url": "https://example.com/security-roundup/postgresql-fortinet",
+          "confidence": "medium"
+        },
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8714",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": false,
+      "should_send_alert": true,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2023-27997"
+          ],
+          "status": "not_affected",
+          "alert_level": "none",
+          "severity": "none",
+          "relevant": false,
+          "confidence": 0.95,
+          "should_send_alert": false,
+          "requires_human_review": false,
+          "reasoning_summary": "The CVE-2023-27997 vulnerability specifically affects Fortinet FortiOS and FortiProxy SSL-VPN appliances, which are not present in the company's technology stack. The company's stack includes PostgreSQL (version 15.13), Spring AI, n8n, and Ollama, none of which match the affected products in the CVE description.",
+          "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+          "affected_stack_items": [],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27997",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://example.com/security-roundup/postgresql-fortinet",
+              "confidence": "medium"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1201,
+            "relevant": false,
+            "category": "cve",
+            "status": "not_affected",
+            "alert_level": "none",
+            "confidence": 0.95,
+            "cve_ids": [
+              "CVE-2023-27997"
+            ],
+            "affected_stack_items": [],
+            "reasoning_summary": "The CVE-2023-27997 vulnerability specifically affects Fortinet FortiOS and FortiProxy SSL-VPN appliances, which are not present in the company's technology stack. The company's stack includes PostgreSQL (version 15.13), Spring AI, n8n, and Ollama, none of which match the affected products in the CVE description.",
+            "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27997",
+                "confidence": "high"
+              },
+              {
+                "type": "news",
+                "url": "https://example.com/security-roundup/postgresql-fortinet",
+                "confidence": "medium"
+              }
+            ],
+            "requires_human_review": false,
+            "should_send_alert": false
+          }
+        },
+        {
+          "cve_ids": [
+            "CVE-2025-8714"
+          ],
+          "status": "confirmed_affected",
+          "alert_level": "high",
+          "severity": "high",
+          "relevant": true,
+          "confidence": 0.9,
+          "should_send_alert": true,
+          "requires_human_review": false,
+          "reasoning_summary": "The CVE-2025-8714 affects PostgreSQL versions before 15.14, and the company's stack includes PostgreSQL 15.13 which is in the vulnerable range.",
+          "recommended_action": "Apply vendor patches for PostgreSQL as described in the CVE advisory",
+          "affected_stack_items": [
+            {
+              "name": "PostgreSQL",
+              "vendor": "PostgreSQL",
+              "installed_versions": [
+                "15.13"
+              ],
+              "matched_version": "15.13",
+              "affected_versions": "before 15.14",
+              "match_type": "version",
+              "evidence": "Installed version (15.13) falls within affected range (before 15.14)",
+              "impact": "high"
+            }
+          ],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8714",
+              "confidence": "high"
+            },
+            {
+              "type": "news",
+              "url": "https://example.com/security-roundup/postgresql-fortinet",
+              "confidence": "medium"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1201,
+            "relevant": true,
+            "category": "cve",
+            "status": "confirmed_affected",
+            "alert_level": "high",
+            "confidence": 0.9,
+            "cve_ids": [
+              "CVE-2025-8714"
+            ],
+            "affected_stack_items": [
+              {
+                "name": "PostgreSQL",
+                "vendor": "PostgreSQL",
+                "installed_versions": [
+                  "15.13"
+                ],
+                "matched_version": "15.13",
+                "affected_versions": "before 15.14",
+                "match_type": "version",
+                "evidence": "Installed version (15.13) falls within affected range (before 15.14)",
+                "impact": "high"
+              }
+            ],
+            "reasoning_summary": "The CVE-2025-8714 affects PostgreSQL versions before 15.14, and the company's stack includes PostgreSQL 15.13 which is in the vulnerable range.",
+            "recommended_action": "Apply vendor patches for PostgreSQL as described in the CVE advisory",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8714",
+                "confidence": "high"
+              },
+              {
+                "type": "news",
+                "url": "https://example.com/security-roundup/postgresql-fortinet",
+                "confidence": "medium"
+              }
+            ],
+            "requires_human_review": false,
+            "should_send_alert": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1203,
+    "relevant": false,
+    "relevante": false,
+    "status": "not_affected",
+    "alert_level": "none",
+    "severidad": "none",
+    "confidence": 0.95,
+    "cve_ids": [
+      "CVE-2024-3094"
+    ],
+    "cve_detectado": "CVE-2024-3094",
+    "cve_detectado_pg": "{CVE-2024-3094}",
+    "affected_stack_items": [],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3094",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": false,
+    "requiere_revision": false,
+    "should_send_alert": false,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2024-3094"
+        ],
+        "status": "not_affected",
+        "alert_level": "none",
+        "severity": "none",
+        "relevant": false,
+        "confidence": 0.95,
+        "should_send_alert": false,
+        "requires_human_review": false,
+        "reasoning_summary": "The CVE-2024-3094 vulnerability affects XZ Utils, which is not present in the company's technology stack. None of the listed components (Spring AI, n8n, PostgreSQL, Ollama) are related to XZ Utils or its affected versions.",
+        "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+        "affected_stack_items": [],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3094",
+            "confidence": "high"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1203,
+          "relevant": false,
+          "category": "cve",
+          "status": "not_affected",
+          "alert_level": "none",
+          "confidence": 0.95,
+          "cve_ids": [
+            "CVE-2024-3094"
+          ],
+          "affected_stack_items": [],
+          "reasoning_summary": "The CVE-2024-3094 vulnerability affects XZ Utils, which is not present in the company's technology stack. None of the listed components (Spring AI, n8n, PostgreSQL, Ollama) are related to XZ Utils or its affected versions.",
+          "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3094",
+              "confidence": "high"
+            }
+          ],
+          "requires_human_review": false,
+          "should_send_alert": false
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1203,
+      "relevant": false,
+      "status": "not_affected",
+      "alert_level": "none",
+      "confidence": 0.95,
+      "cve_ids": [
+        "CVE-2024-3094"
+      ],
+      "affected_stack_items": [],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3094",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": false,
+      "should_send_alert": false,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2024-3094"
+          ],
+          "status": "not_affected",
+          "alert_level": "none",
+          "severity": "none",
+          "relevant": false,
+          "confidence": 0.95,
+          "should_send_alert": false,
+          "requires_human_review": false,
+          "reasoning_summary": "The CVE-2024-3094 vulnerability affects XZ Utils, which is not present in the company's technology stack. None of the listed components (Spring AI, n8n, PostgreSQL, Ollama) are related to XZ Utils or its affected versions.",
+          "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+          "affected_stack_items": [],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3094",
+              "confidence": "high"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1203,
+            "relevant": false,
+            "category": "cve",
+            "status": "not_affected",
+            "alert_level": "none",
+            "confidence": 0.95,
+            "cve_ids": [
+              "CVE-2024-3094"
+            ],
+            "affected_stack_items": [],
+            "reasoning_summary": "The CVE-2024-3094 vulnerability affects XZ Utils, which is not present in the company's technology stack. None of the listed components (Spring AI, n8n, PostgreSQL, Ollama) are related to XZ Utils or its affected versions.",
+            "recommended_action": "No action required for this CVE as it does not impact any components in the current technology stack.",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3094",
+                "confidence": "high"
+              }
+            ],
+            "requires_human_review": false,
+            "should_send_alert": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1204,
+    "relevant": false,
+    "relevante": false,
+    "status": "not_affected",
+    "alert_level": "none",
+    "severidad": "none",
+    "confidence": 0.9,
+    "cve_ids": [
+      "CVE-2024-27980"
+    ],
+    "cve_detectado": "CVE-2024-27980",
+    "cve_detectado_pg": "{CVE-2024-27980}",
+    "affected_stack_items": [],
+    "sources": [
+      {
+        "type": "nvd",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27980",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": false,
+    "requiere_revision": false,
+    "should_send_alert": false,
+    "procesado": "SI",
+    "parser_error": false,
+    "resultados_cves": [
+      {
+        "cve_ids": [
+          "CVE-2024-27980"
+        ],
+        "status": "not_affected",
+        "alert_level": "none",
+        "severity": "none",
+        "relevant": false,
+        "confidence": 0.9,
+        "should_send_alert": false,
+        "requires_human_review": false,
+        "reasoning_summary": "The CVE affects Node.js child_process functions, but none of the company's stack components (Spring AI, n8n, PostgreSQL, Ollama) are explicitly listed as Node.js. While n8n may use Node.js internally, there is no version information provided for Node.js in the stack to confirm exposure.",
+        "recommended_action": "No action required for this CVE based on current stack data.",
+        "affected_stack_items": [],
+        "sources": [
+          {
+            "type": "nvd",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27980",
+            "confidence": "high"
+          }
+        ],
+        "parser_error": false,
+        "resultado_agente": {
+          "id": 1204,
+          "relevant": false,
+          "category": "cve",
+          "status": "not_affected",
+          "alert_level": "none",
+          "confidence": 0.9,
+          "cve_ids": [
+            "CVE-2024-27980"
+          ],
+          "affected_stack_items": [],
+          "reasoning_summary": "The CVE affects Node.js child_process functions, but none of the company's stack components (Spring AI, n8n, PostgreSQL, Ollama) are explicitly listed as Node.js. While n8n may use Node.js internally, there is no version information provided for Node.js in the stack to confirm exposure.",
+          "recommended_action": "No action required for this CVE based on current stack data.",
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27980",
+              "confidence": "high"
+            }
+          ],
+          "requires_human_review": false,
+          "should_send_alert": false
+        }
+      }
+    ],
+    "resultado_agente": {
+      "id": 1204,
+      "relevant": false,
+      "status": "not_affected",
+      "alert_level": "none",
+      "confidence": 0.9,
+      "cve_ids": [
+        "CVE-2024-27980"
+      ],
+      "affected_stack_items": [],
+      "sources": [
+        {
+          "type": "nvd",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27980",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": false,
+      "should_send_alert": false,
+      "resultados_cves": [
+        {
+          "cve_ids": [
+            "CVE-2024-27980"
+          ],
+          "status": "not_affected",
+          "alert_level": "none",
+          "severity": "none",
+          "relevant": false,
+          "confidence": 0.9,
+          "should_send_alert": false,
+          "requires_human_review": false,
+          "reasoning_summary": "The CVE affects Node.js child_process functions, but none of the company's stack components (Spring AI, n8n, PostgreSQL, Ollama) are explicitly listed as Node.js. While n8n may use Node.js internally, there is no version information provided for Node.js in the stack to confirm exposure.",
+          "recommended_action": "No action required for this CVE based on current stack data.",
+          "affected_stack_items": [],
+          "sources": [
+            {
+              "type": "nvd",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27980",
+              "confidence": "high"
+            }
+          ],
+          "parser_error": false,
+          "resultado_agente": {
+            "id": 1204,
+            "relevant": false,
+            "category": "cve",
+            "status": "not_affected",
+            "alert_level": "none",
+            "confidence": 0.9,
+            "cve_ids": [
+              "CVE-2024-27980"
+            ],
+            "affected_stack_items": [],
+            "reasoning_summary": "The CVE affects Node.js child_process functions, but none of the company's stack components (Spring AI, n8n, PostgreSQL, Ollama) are explicitly listed as Node.js. While n8n may use Node.js internally, there is no version information provided for Node.js in the stack to confirm exposure.",
+            "recommended_action": "No action required for this CVE based on current stack data.",
+            "sources": [
+              {
+                "type": "nvd",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27980",
+                "confidence": "high"
+              }
+            ],
+            "requires_human_review": false,
+            "should_send_alert": false
+          }
+        }
+      ]
+    }
+  }
+]
+
+[
+  {
+    "id": 1196,
+    "relevant": true,
+    "category": "security_news",
+    "status": "possibly_affected",
+    "alert_level": "medium",
+    "confidence": 0.8,
+    "cve_ids": [],
+    "affected_stack_items": [
+      {
+        "name": "n8n",
+        "vendor": "n8n",
+        "installed_versions": [
+          "2.8.3"
+        ],
+        "matched_version": "2.8.3",
+        "affected_versions": "2.8.3",
+        "match_type": "version",
+        "evidence": "News explicitly mentions version 2.8.3 with security exposure through diagnostic routes",
+        "impact": "low"
+      }
+    ],
+    "reasoning_summary": "The news directly references n8n version 2.8.3 in the company stack, describing a potential metadata exposure vulnerability. While no CVE is provided, the installed version matches the affected version mentioned in the advisory.",
+    "recommended_action": "Review access controls for internal diagnostic routes and consider upgrading to a newer version of n8n if available.",
+    "sources": [
+      {
+        "type": "vendor_advisory",
+        "url": "https://docs.n8n.io/hosting/security/",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": true,
+    "should_send_alert": true,
+    "procesado": "SI",
+    "severidad": "medium",
+    "relevante": true,
+    "requiere_revision": true,
+    "resultado_agente": {
+      "id": 1196,
+      "relevant": true,
+      "category": "security_news",
+      "status": "possibly_affected",
+      "alert_level": "medium",
+      "confidence": 0.8,
+      "cve_ids": [],
+      "affected_stack_items": [
+        {
+          "name": "n8n",
+          "vendor": "n8n",
+          "installed_versions": [
+            "2.8.3"
+          ],
+          "matched_version": "2.8.3",
+          "affected_versions": "2.8.3",
+          "match_type": "version",
+          "evidence": "News explicitly mentions version 2.8.3 with security exposure through diagnostic routes",
+          "impact": "low"
+        }
+      ],
+      "reasoning_summary": "The news directly references n8n version 2.8.3 in the company stack, describing a potential metadata exposure vulnerability. While no CVE is provided, the installed version matches the affected version mentioned in the advisory.",
+      "recommended_action": "Review access controls for internal diagnostic routes and consider upgrading to a newer version of n8n if available.",
+      "sources": [
+        {
+          "type": "vendor_advisory",
+          "url": "https://docs.n8n.io/hosting/security/",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": true,
+      "should_send_alert": true
+    },
+    "parser_error": false,
+    "raw_agent_output": "Okay, let's tackle this analysis step by step. The user provided a non-CVE security news item and a company technology stack. My job is to determine if the news affects any components in the stack.\n\nFirst, I'll look at the news title: \"n8n self-hosted deployment security notice\". The URL points to n8n's documentation about a security issue in version 2.8.3. The problem is that authenticated low-privilege users might access workflow metadata through internal diagnostic routes. The company stack includes n8n version 2.8.3, which matches the affected version mentioned in the news.\n\nNow, checking the status rules. Since the news explicitly mentions the product (n8n) and the installed version (2.8.3), but there's no CVE or official advisory evidence provided beyond the news article itself, I should consider \"possibly_affected\". The requires_human_review flag is needed here because even though the version matches, without an official advisory, confirmation isn't certain.\n\nLooking at alert levels: the exposure is internal, and the criticality of n8n in the stack is medium. The issue allows access to metadata, which might be a low to medium impact depending on sensitivity. Since it's internal and not exposing sensitive data directly, maybe \"medium\" is appropriate.\n\nConfidence should be around 0.8 because the version matches but lacks official confirmation. Sources include the provided URL, which seems like a vendor advisory since it's from n8n's documentation. So source.type would be \"vendor_advisory\".\n\nAffected_stack_items needs to list n8n with the matched version and impact as low or medium? The news says \"possible exposure\" but doesn't specify severity beyond metadata access. Maybe impact is \"low\" here.\n\nPutting it all together: status is possibly_affected, alert_level medium, confidence 0.8, sources include the URL as vendor_advisory, requires_human_review true.\n{\"id\":1196,\"relevant\":true,\"category\":\"security_news\",\"status\":\"possibly_affected\",\"alert_level\":\"medium\",\"confidence\":0.8,\"cve_ids\":[],\"affected_stack_items\":[{\"name\":\"n8n\",\"vendor\":\"n8n\",\"installed_versions\":[\"2.8.3\"],\"matched_version\":\"2.8.3\",\"affected_versions\":\"2.8.3\",\"match_type\":\"version\",\"evidence\":\"News explicitly mentions version 2.8.3 with security exposure through diagnostic routes\",\"impact\":\"low\"}],\"reasoning_summary\":\"The news directly references n8n version 2.8.3 in the company stack, describing a potential metadata exposure vulnerability. While no CVE is provided, the installed version matches the affected version mentioned in the advisory.\",\"recommended_action\":\"Review access controls for internal diagnostic routes and consider upgrading to a newer version of n8n if available.\",\"sources\":[{\"url\":\"https://docs.n8n.io/hosting/security/\",\"type\":\"vendor_advisory\",\"confidence\":\"high\"}],\"requires_human_review\":true}"
+  },
+  {
+    "id": 1202,
+    "relevant": true,
+    "category": "security_news",
+    "status": "possibly_affected",
+    "alert_level": "medium",
+    "confidence": 0.75,
+    "cve_ids": [],
+    "affected_stack_items": [
+      {
+        "name": "PostgreSQL",
+        "vendor": "PostgreSQL",
+        "installed_versions": [
+          "15.13"
+        ],
+        "matched_version": null,
+        "affected_versions": "15",
+        "match_type": "version",
+        "evidence": "News mentions PostgreSQL 15 authentication and access control issues",
+        "impact": "none"
+      }
+    ],
+    "reasoning_summary": "The news item discusses security concerns in PostgreSQL 15 deployments, matching the company's installed version (15.13). However, no specific CVE or exploit details are provided to confirm vulnerability.",
+    "recommended_action": "Review pg_hba.conf configurations, authentication methods, and ensure patch management practices are up-to-date for PostgreSQL 15.13.",
+    "sources": [
+      {
+        "type": "vendor_advisory",
+        "url": "https://www.postgresql.org/docs/15/auth-pg-hba-conf.html",
+        "confidence": "high"
+      }
+    ],
+    "requires_human_review": true,
+    "should_send_alert": true,
+    "procesado": "SI",
+    "severidad": "medium",
+    "relevante": true,
+    "requiere_revision": true,
+    "resultado_agente": {
+      "id": 1202,
+      "relevant": true,
+      "category": "security_news",
+      "status": "possibly_affected",
+      "alert_level": "medium",
+      "confidence": 0.75,
+      "cve_ids": [],
+      "affected_stack_items": [
+        {
+          "name": "PostgreSQL",
+          "vendor": "PostgreSQL",
+          "installed_versions": [
+            "15.13"
+          ],
+          "matched_version": null,
+          "affected_versions": "15",
+          "match_type": "version",
+          "evidence": "News mentions PostgreSQL 15 authentication and access control issues",
+          "impact": "none"
+        }
+      ],
+      "reasoning_summary": "The news item discusses security concerns in PostgreSQL 15 deployments, matching the company's installed version (15.13). However, no specific CVE or exploit details are provided to confirm vulnerability.",
+      "recommended_action": "Review pg_hba.conf configurations, authentication methods, and ensure patch management practices are up-to-date for PostgreSQL 15.13.",
+      "sources": [
+        {
+          "type": "vendor_advisory",
+          "url": "https://www.postgresql.org/docs/15/auth-pg-hba-conf.html",
+          "confidence": "high"
+        }
+      ],
+      "requires_human_review": true,
+      "should_send_alert": true
+    },
+    "parser_error": false,
+    "raw_agent_output": "Okay, let's tackle this analysis step by step. The user provided a non-CVE news item about PostgreSQL 15 and wants to know if it affects their company's technology stack.\n\nFirst, I need to check the company_stack for any components related to the news. The news mentions PostgreSQL 15, so looking at the company_stack, there's an entry for PostgreSQL with version 15.13. That's a match because the news is about PostgreSQL 15, and the company uses 15.13.\n\nNext, the status. Since the news doesn't mention any specific CVE or exploit, but it does warn about weak authentication and access control, which are relevant to security. The company's PostgreSQL is internal with high criticality. However, without a CVE or explicit confirmation of vulnerability in 15.13, I can't confirm it's affected. So the status should be \"possibly_affected\".\n\nAlert level: The news talks about authentication issues and access control, which could lead to security risks. Since PostgreSQL is high-criticality, even though it's internal, the alert level might be medium or high. But since there's no confirmed exploit, maybe medium.\n\nConfidence: The match is on product (PostgreSQL) and version (15 vs 15.13). The news doesn't specify affected versions, so confidence should be around 0.7 because it's a partial match but not certain.\n\nSources: The URL provided in the news is from PostgreSQL's official site, so source.type is \"vendor_advisory\".\n\nRequires human review: Yes, because even though there's a match, without specific CVE or details on affected versions, a human check is needed to confirm if 15.13 is indeed vulnerable.\n\nAffected stack items: Include PostgreSQL with the matched version and note the evidence from the news.\n\nPutting it all together into JSON as per the rules.\n{\"id\":1202,\"relevant\":true,\"category\":\"security_news\",\"status\":\"possibly_affected\",\"alert_level\":\"medium\",\"confidence\":0.75,\"cve_ids\":[],\"affected_stack_items\":[{\"name\":\"PostgreSQL\",\"vendor\":\"PostgreSQL\",\"installed_versions\":[\"15.13\"],\"matched_version\":null,\"affected_versions\":\"15\",\"match_type\":\"version\",\"evidence\":\"News mentions PostgreSQL 15 authentication and access control issues\",\"impact\":\"none\"}],\"reasoning_summary\":\"The news item discusses security concerns in PostgreSQL 15 deployments, matching the company's installed version (15.13). However, no specific CVE or exploit details are provided to confirm vulnerability.\",\"recommended_action\":\"Review pg_hba.conf configurations, authentication methods, and ensure patch management practices are up-to-date for PostgreSQL 15.13.\",\"sources\":[{\"url\":\"https://www.postgresql.org/docs/15/auth-pg-hba-conf.html\",\"type\":\"vendor_advisory\",\"confidence\":\"high\"}],\"requires_human_review\":true}"
+  }
+]

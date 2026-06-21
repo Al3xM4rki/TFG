@@ -1,0 +1,113 @@
+/no_think
+
+Analyze the following non-CVE security or technology news item against the provided company technology stack.
+
+INPUT DATA:
+{{ JSON.stringify($json) }}
+
+Return only one valid JSON object.
+
+The JSON object must contain exactly these fields:
+- id
+- relevant
+- category
+- status
+- alert_level
+- confidence
+- cve_ids
+- affected_stack_items
+- reasoning_summary
+- recommended_action
+- sources
+- requires_human_review
+
+Hard rules:
+- id must be copied exactly from INPUT DATA.id.
+- cve_ids must be [].
+- Never invent, infer, or generate CVE IDs.
+- Do not include any text outside the JSON object.
+- Do not include comments inside the JSON.
+- Do not include sources with null, empty, or invented URLs.
+- All output content must be written in English.
+- Do not use confidence=1.0.
+
+Allowed values:
+category:
+- security_news
+- technology_news
+- vendor_update
+- other
+
+status:
+- not_affected
+- possibly_affected
+- confirmed_affected
+- unknown
+
+alert_level:
+- none
+- low
+- medium
+- high
+- critical
+
+match_type:
+- product
+- vendor
+- keyword
+- version
+- dependency
+- ecosystem
+
+impact:
+- none
+- low
+- medium
+- high
+- critical
+
+source.type:
+- news
+- vendor_advisory
+- other
+
+source.confidence:
+- low
+- medium
+- high
+
+affected_stack_items:
+- Use [] if there are no affected or possibly affected stack components.
+- If there are affected or possibly affected components, each item must have this exact structure:
+
+{
+  "name": "",
+  "vendor": "",
+  "installed_versions": [],
+  "matched_version": null,
+  "affected_versions": "",
+  "match_type": "product",
+  "evidence": "",
+  "impact": "none"
+}
+
+Decision rules:
+- If the news does not mention or imply any product, vendor, dependency, ecosystem, or keyword related to company_stack, use status="not_affected", relevant=false, alert_level="none", affected_stack_items=[].
+- If the news directly mentions a stack component but lacks CVE, CVSS, CPE, version range, or official advisory confirmation, use status="possibly_affected" and requires_human_review=true.
+- If the news directly mentions a stack component and the installed version is explicitly affected, use status="possibly_affected" unless the source is clearly official and the impact is explicit.
+- Use status="confirmed_affected" only when the evidence clearly confirms that the installed product/version in company_stack is affected.
+- Use status="unknown" if the news is too vague, too short, or lacks enough context to decide.
+- If status="not_affected", then relevant=false, alert_level="none", affected_stack_items=[].
+- If status="possibly_affected" or status="confirmed_affected", then relevant=true.
+- For non-CVE news related to the stack, requires_human_review should usually be true.
+
+Alert level guidance:
+- Use alert_level="medium" for possible impact on an internal, medium-criticality stack component.
+- Use alert_level="high" if the news indicates sensitive data exposure, privilege escalation, authentication bypass, remote code execution, or serious misconfiguration on a high-criticality or exposed component.
+- Use alert_level="critical" only for confirmed severe impact on an externally exposed or critical component.
+
+Sources:
+- If INPUT DATA.news.url exists, include it in sources.
+- Do not include sources with null or empty URLs.
+
+Return only the JSON object.

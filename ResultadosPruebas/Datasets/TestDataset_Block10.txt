@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block10',
+  'PostgreSQL has published a security advisory for CVE-2025-8715 affecting PostgreSQL 15 versions before 15.14. The vulnerability affects pg_dump, pg_dumpall, pg_restore and pg_upgrade, and may allow arbitrary code execution during restore operations through crafted object names. Administrators are advised to upgrade to the fixed minor release.',
+  'NO',
+  NULL,
+  NULL,
+  'PostgreSQL security advisory for CVE-2025-8715',
+  'https://www.postgresql.org/support/security/CVE-2025-8715/'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'A security notice for self-hosted n8n deployments describes a possible exposure of workflow execution metadata through internal diagnostic routes. The issue is associated with version 2.8.3 and may allow authenticated low-privilege users to access workflow names, execution identifiers and partial environment metadata. Administrators should review access controls and update to the latest available release.',
+  'NO',
+  NULL,
+  NULL,
+  'n8n self-hosted deployment security notice',
+  'https://docs.n8n.io/hosting/security/'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'Microsoft Exchange Server advisory: CVE-2021-26855 is a server-side request forgery vulnerability that may allow an unauthenticated attacker to send arbitrary HTTP requests and authenticate as the Exchange server. Organizations running vulnerable Exchange Server deployments should apply the relevant security updates.',
+  'NO',
+  NULL,
+  NULL,
+  'Microsoft Exchange Server SSRF advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2021-26855'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'Security advisory: CVE-2024-38819 affects Spring Framework applications using functional web frameworks to serve static resources. Affected applications may be exposed to path traversal under specific configurations. Application owners should review framework versions and update according to vendor guidance.',
+  'NO',
+  NULL,
+  NULL,
+  'Spring Framework static resource handling advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-38819'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'Security advisory: CVE-2024-22250 affects VMware Workspace ONE Access and VMware Identity Manager. The issue is associated with VMware access management and identity infrastructure. Affected deployments should be updated according to the vendor advisory.',
+  'NO',
+  NULL,
+  NULL,
+  'VMware Workspace ONE Access security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-22250'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'Ollama security advisory: CVE-2025-63389 affects Ollama API endpoints in versions up to and including 0.12.3. The vulnerability may allow unauthorized interaction with exposed API functionality depending on deployment and network accessibility. Administrators should verify installed versions and apply available updates.',
+  'NO',
+  NULL,
+  NULL,
+  'Ollama API endpoint security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2025-63389'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'A vulnerability roundup includes CVE-2025-8714 affecting PostgreSQL 15 versions before 15.14 during restore operations, and CVE-2023-27997 affecting Fortinet FortiOS and FortiProxy SSL-VPN appliances. Administrators should review affected products and apply vendor patches where applicable.',
+  'NO',
+  NULL,
+  NULL,
+  'Database and network appliance vulnerability roundup',
+  'https://example.com/security-roundup/postgresql-fortinet'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'A database security bulletin warns about weak authentication rules, excessive internal access and outdated minor releases in PostgreSQL 15 deployments. The guidance recommends reviewing pg_hba.conf entries, administrative roles, password authentication methods and patch management practices.',
+  'NO',
+  NULL,
+  NULL,
+  'PostgreSQL 15 authentication and access control bulletin',
+  'https://www.postgresql.org/docs/15/auth-pg-hba-conf.html'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'Security advisory: CVE-2024-3094 affects XZ Utils through a supply chain backdoor in affected Linux distribution packages. XZ Utils is a compression library that may be installed as a system package. Administrators should verify distribution package versions and affected builds.',
+  'NO',
+  NULL,
+  NULL,
+  'XZ Utils supply chain security advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-3094'
+),
+(
+  NOW(),
+  'TestDataset_Block10',
+  'Security advisory: CVE-2024-27980 affects Node.js child_process.spawn and child_process.spawnSync handling of batch files. Malicious command line arguments may lead to command injection in affected runtime environments. Projects using vulnerable Node.js versions should update to fixed releases.',
+  'NO',
+  NULL,
+  NULL,
+  'Node.js child_process command injection advisory',
+  'https://nvd.nist.gov/vuln/detail/CVE-2024-27980'
+);

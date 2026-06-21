@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-6637 affects PostgreSQL 15 installations before version 15.18. The vulnerability is related to the PostgreSQL refint contrib module and may allow stack buffer overflow and SQL injection. Organizations running PostgreSQL 15 should review their installed minor version and upgrade to PostgreSQL 15.18 or later.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-6637 affects PostgreSQL 15 before 15.18',
+  'https://www.postgresql.org/support/security/CVE-2026-6637/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-6479 affects PostgreSQL 15 installations before version 15.18. The vulnerability is related to PostgreSQL SSL/GSS initialization and may cause denial of service through uncontrolled recursion. PostgreSQL 15 deployments should be upgraded to a fixed minor release.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-6479 affects PostgreSQL 15 before 15.18',
+  'https://www.postgresql.org/support/security/CVE-2026-6479/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-6478 affects PostgreSQL 15 installations before version 15.18. The vulnerability may disclose MD5-hashed passwords through a covert timing channel. PostgreSQL 15 environments should verify their current minor version and apply the security update.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-6478 affects PostgreSQL 15 before 15.18',
+  'https://www.postgresql.org/support/security/CVE-2026-6478/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-6477 affects PostgreSQL 15 installations before version 15.18. The vulnerability affects PostgreSQL libpq lo_* functions and may allow a server superuser to overwrite client stack memory. PostgreSQL 15 users should upgrade to the corrected minor version.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-6477 affects PostgreSQL 15 before 15.18',
+  'https://www.postgresql.org/support/security/CVE-2026-6477/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-6475 affects PostgreSQL 15 installations before version 15.18. The issue affects PostgreSQL pg_basebackup and pg_rewind and may allow overwriting unrelated files chosen by the origin superuser. PostgreSQL 15 deployments should be updated.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-6475 affects PostgreSQL 15 before 15.18',
+  'https://www.postgresql.org/support/security/CVE-2026-6475/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-2006 affects PostgreSQL 15 installations before version 15.16. The issue is caused by missing validation of multibyte character length and may allow arbitrary code execution. Organizations using PostgreSQL 15 should update to PostgreSQL 15.16 or later.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-2006 affects PostgreSQL 15 before 15.16',
+  'https://www.postgresql.org/support/security/CVE-2026-2006/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-2005 affects PostgreSQL 15 installations before version 15.16. The vulnerability affects the pgcrypto contrib module and may allow arbitrary code execution through a heap buffer overflow. PostgreSQL 15 environments should review whether pgcrypto is installed and upgrade.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-2005 affects PostgreSQL 15 before 15.16',
+  'https://www.postgresql.org/support/security/CVE-2026-2005/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2026-2004 affects PostgreSQL 15 installations before version 15.16. The vulnerability affects the intarray contrib module and may allow arbitrary code execution due to missing validation of input type. PostgreSQL 15 users should update to the fixed release.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2026-2004 affects PostgreSQL 15 before 15.16',
+  'https://www.postgresql.org/support/security/CVE-2026-2004/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2025-8715 affects PostgreSQL 15 installations before version 15.14. The vulnerability affects pg_dump, pg_dumpall, pg_restore and pg_upgrade and may allow arbitrary code execution during restore operations through crafted object names. PostgreSQL 15 deployments should upgrade to PostgreSQL 15.14 or later.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2025-8715 affects PostgreSQL 15 before 15.14',
+  'https://www.postgresql.org/support/security/CVE-2025-8715/'
+),
+(
+  NOW(),
+  'TestDataset_Block1',
+  'PostgreSQL security advisory: CVE-2025-8714 affects PostgreSQL 15 installations before version 15.14. The vulnerability allows untrusted data inclusion in pg_dump, enabling arbitrary code execution in the psql client during restore operations. PostgreSQL 15 systems should be updated to version 15.14 or later.',
+  'NO',
+  NULL,
+  NULL,
+  'CVE-2025-8714 affects PostgreSQL 15 before 15.14',
+  'https://www.postgresql.org/support/security/CVE-2025-8714/'
+);

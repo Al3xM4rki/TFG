@@ -1,0 +1,111 @@
+INSERT INTO osint (
+  fecha,
+  canal,
+  mensaje_bruto,
+  procesado,
+  severidad,
+  cve_detectado,
+  titulo,
+  url
+)
+VALUES
+(
+  NOW(),
+  'TestDataset_Block4',
+  'n8n has published a security notice warning that self-hosted deployments running version 2.8.3 may expose workflow execution metadata through an improperly protected internal diagnostics endpoint. The issue may allow authenticated low-privilege users to access workflow names, execution identifiers and partial environment metadata. Administrators are advised to restrict access to internal diagnostics endpoints, review user permissions and upgrade to the latest available n8n release.',
+  'NO',
+  NULL,
+  NULL,
+  'n8n security notice affects self-hosted version 2.8.3 deployments',
+  'https://docs.n8n.io/hosting/security/'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'A vendor security notice reports that self-hosted n8n instances may expose sensitive workflow execution information when internal diagnostic routes are accessible to authenticated users. The advisory specifically mentions version 2.8.3 as requiring configuration review. Organizations using n8n in internal automation environments should validate access controls and update to a newer release if available.',
+  'NO',
+  NULL,
+  NULL,
+  'n8n self-hosted diagnostic routes may expose execution metadata',
+  'https://docs.n8n.io/release-notes/'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'PostgreSQL administrators are warned about a security-relevant misconfiguration pattern affecting PostgreSQL 15 deployments. Systems that still allow weak password authentication or overly broad internal network access may expose database metadata to unauthorized internal users. The notice recommends reviewing pg_hba.conf rules, enforcing stronger authentication and upgrading to the latest PostgreSQL 15 minor release.',
+  'NO',
+  NULL,
+  NULL,
+  'PostgreSQL 15 deployments should review weak authentication settings',
+  'https://www.postgresql.org/docs/15/auth-pg-hba-conf.html'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'A PostgreSQL operational security bulletin warns that self-hosted PostgreSQL 15 installations may be at risk when backup utilities and replication roles are configured with excessive privileges. The notice recommends reviewing pg_basebackup usage, restricting administrative roles and applying the latest PostgreSQL minor updates. The company stack includes a self-hosted PostgreSQL 15.13 deployment.',
+  'NO',
+  NULL,
+  NULL,
+  'PostgreSQL 15 backup and replication permissions require security review',
+  'https://www.postgresql.org/docs/15/app-pgbasebackup.html'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'Spring AI deployments using self-hosted applications should review dependency versions and HTTP endpoint exposure. A security notice highlights that applications built with Spring AI 1.0.x may inherit risk from outdated Spring ecosystem dependencies if dependency locking is not enforced. Administrators should verify the Spring Boot and Spring Framework versions packaged with Spring AI 1.0.5 applications.',
+  'NO',
+  NULL,
+  NULL,
+  'Spring AI 1.0.x applications should review Spring dependency versions',
+  'https://docs.spring.io/spring-ai/reference/'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'A Spring ecosystem security notice warns that AI-enabled applications may expose prompt, tool or vector-store metadata when actuator or debugging endpoints are enabled in internal environments. The notice recommends reviewing Spring AI 1.0.5 deployments, restricting actuator endpoints and disabling debug routes in production.',
+  'NO',
+  NULL,
+  NULL,
+  'Spring AI deployments may expose metadata through debugging endpoints',
+  'https://docs.spring.io/spring-boot/reference/actuator/endpoints.html'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'Ollama users are advised to review local API exposure after reports of internal services binding the Ollama API to non-loopback interfaces. Systems running Ollama locally may allow other internal hosts to submit model requests or access model metadata if the service is reachable beyond localhost. Administrators should verify binding configuration and restrict network access.',
+  'NO',
+  NULL,
+  NULL,
+  'Ollama local API exposure may allow internal access to model endpoints',
+  'https://github.com/ollama/ollama/blob/main/docs/faq.md'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'A security notice for local LLM deployments warns that Ollama instances may expose model management endpoints when deployed without network restrictions. Although intended for local use, misconfigured deployments can become reachable from internal networks. Organizations using Ollama should verify the installed version, API binding address and firewall rules.',
+  'NO',
+  NULL,
+  NULL,
+  'Ollama deployments should verify API binding and firewall restrictions',
+  'https://github.com/ollama/ollama'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'Automation platforms such as n8n may expose secrets if workflows log environment variables or credentials during failed executions. The notice recommends reviewing workflow error handling, execution logging and credential permissions. The company stack includes a self-hosted n8n 2.8.3 deployment used for internal automation.',
+  'NO',
+  NULL,
+  NULL,
+  'n8n workflow logging may expose secrets in self-hosted environments',
+  'https://docs.n8n.io/hosting/securing/overview/'
+),
+(
+  NOW(),
+  'TestDataset_Block4',
+  'A database hardening notice recommends urgent review of PostgreSQL 15 installations that are self-hosted and internally reachable. The notice highlights risks related to excessive database privileges, exposed administrative roles and outdated minor versions. Organizations running PostgreSQL 15.13 should validate user roles, network exposure and update policy.',
+  'NO',
+  NULL,
+  NULL,
+  'PostgreSQL 15.13 hardening notice for self-hosted internal deployments',
+  'https://www.postgresql.org/docs/15/user-manag.html'
+);

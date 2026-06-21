@@ -1,0 +1,63 @@
+/no_think
+
+Analyze INPUT DATA and determine whether the CVE/news affects the provided company technology stack.
+
+INPUT DATA:
+{{ JSON.stringify($json) }}
+
+Return only one valid JSON object.
+
+The JSON object must contain exactly these fields:
+- id
+- relevant
+- category
+- status
+- alert_level
+- confidence
+- cve_ids
+- affected_stack_items
+- reasoning_summary
+- recommended_action
+- sources
+- requires_human_review
+
+Hard rules:
+- id must be copied exactly from INPUT DATA.id.
+- If INPUT DATA.cve.id exists, cve_ids must be exactly [INPUT DATA.cve.id].
+- Never invent, replace, shorten, or generalize CVE IDs.
+- Never use placeholder CVEs.
+- Do not include any text outside the JSON object.
+- Do not include comments inside the JSON.
+- Do not include sources with null, empty, or invented URLs.
+- All output content must be written in English.
+- Do not use confidence=1.0.
+
+Allowed values:
+category: cve, security_news, technology_news, other
+status: not_affected, possibly_affected, confirmed_affected, unknown
+alert_level: none, low, medium, high, critical
+match_type: product, vendor, cpe, keyword, version, dependency, ecosystem
+impact: none, low, medium, high, critical
+source.type: nvd, vendor_advisory, news, cisa, other
+source.confidence: low, medium, high
+
+affected_stack_items must be [] if there are no affected or possibly affected stack components.
+
+If affected_stack_items is not empty, each item must contain:
+{
+  "name": "",
+  "vendor": "",
+  "installed_versions": [],
+  "matched_version": null,
+  "affected_versions": "",
+  "match_type": "product",
+  "evidence": "",
+  "impact": "none"
+}
+
+Decision rules:
+- If the affected product is not present in company_stack, use status="not_affected", relevant=false, alert_level="none", affected_stack_items=[].
+- Do not mark a CVE as affected only because it is critical, has a high CVSS score, or appears in CISA KEV.
+- Use possibly_affected if there is a product, vendor, CPE, dependency, ecosystem, or keyword match but evidence or version information is incomplete.
+- Use confirmed_affected only when the affected product matches a stack component and the installed version is in the affected range.
+- Use unknown only when the input is insufficient to decide.
